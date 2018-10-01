@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+/* Global Styles 
+**************************************************************/
+
+body {
+    margin:0px;
+    background-image: url("../images/gravel.png");
+    padding:0px;
+    position: relative;
+}
+
+@media screen and (max-width:980px) {
+    header {
+        /* background-color: red; */
+        width: 980px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    header {
+        /* background-color: blue; */
+        width: 740px; 
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        background-color: teal;
+        width: 640px;
+        text-align: center;
+    }
+
+    header h1 {
+        text-align: center;
+        width: 640px;
+    }
+
+    .navigation {
+        width: 640px;
+    }
+}
+
+
+/* Navigation Bar
+**************************************************************/
+
+header {
+    margin: 0px;
+    /* height: 80px; */
+    float:leff;
+    text-align: left;
+    width: 960px;
+    margin: 0px auto; 
+    position: relative;
+    background-color: teal;
+
+
+}
+
+.navigation {
+    background-color:#ffffff;
+    border-bottom:  #cccccc solid 2px;
+    float:left;
+    width: 100%;
+}
+
+#name {
+    background-color: teal;
+    color:white;
+    float: left;
+    /* padding: 0px 40px; */
+    /* line-height: 40px; */
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+ 
+}
+
+header h1 {
+    color: white;
+    padding: 20px;
+}
+
+/* #name_heading {
+    color: white;
+} */
+
+#ul-links {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    /* line-height: 100px;
+    margin: 0px 0 0 0px; */
+    /* display: inline-block; */
+    
+}
+
+li {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+a {
+    /* text-decoration: none; */
+}
+
+
