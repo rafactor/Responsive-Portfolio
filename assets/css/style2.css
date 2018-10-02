@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+/* Navigation Bar
+**************************************************************/
+
+
+
+header {
+    margin: 0px;
+    float:leff;
+    margin: 0px auto; 
+    position: relative;
+    background-color: white;
+    width: 1400px;
+}
+
+li {
+    display: inline;
+}
+
+.name-tag {
+    padding: 20px 0px;
+    color:white;
+    background-color: teal;
+    width: 250px;
+    text-align: center;
+}
+
+/* Global Styles 
+**************************************************************/
+
+body {
+    margin:0px auto;
+    background-image: url("../images/gravel.png");
+    padding:0px;
+    position: relative;
+    width: 980px;
+}
