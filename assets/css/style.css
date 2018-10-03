@@ -22,11 +22,13 @@
 header {
     float:leff;
     margin: 0px; 
-    position: relative;
+    position: fixed;
     background-color: white;
     width: 100%;
     float:left;
     border-bottom: #cccccc solid 1px;
+    z-index: 102;
+
 }
 
 li {
@@ -96,7 +98,7 @@ body {
 }
 
 main {
-    margin: 20px 20px 80px 20px; 
+    margin: 110px 20px 80px 20px; 
     /* float: left;   */
 }
 
@@ -191,7 +193,7 @@ button {
 .portfolio-image{
     
     /* margin-bottom: 40px; */
-    width: 100%;
+    /* width: 100%; */
   
    
 }
@@ -199,11 +201,11 @@ button {
 .portfolio-item {
     position: relative;
     width: 48%;
-    padding-top: 35%;
+    padding-top: 40%;
     margin-bottom: 20px;
    /* background-color: beige; */
    background-size: cover;   
-   border: solid 1px black;
+
 }
 
 .banner {
@@ -212,9 +214,9 @@ button {
     background-color: #777777;
     color: white;
     text-align: center;
-    bottom: 15px;
+    bottom: 0.5em;
     z-index: 100;
-    padding: 1rem;
+    padding: 2rem;
     font-size:18px;
 }
 
@@ -294,10 +296,19 @@ button {
 
     .portfolio-item {
         width: 100%;
+        padding-top: 75%;
     }
 
     .banner {
         font-size: 3vw;
+    }
+
+    header {
+        position: relative;
+    }
+
+    main {
+        margin-top: 20px;
     }
 }
 
