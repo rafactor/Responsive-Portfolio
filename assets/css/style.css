@@ -1,7 +1,16 @@
+/* * Teal color (used for headings and backgrounds): `#4aaaa5`
+* Regular font color (used for paragraphs and all text besides the headings): `#777777`
+* Main header background color: `#ffffff`
+* Main header border color: `#cccccc`
+* Footer background color: `#666666`
+* Main content background color: `#ffffff`
+* Main content border color: `#dddddd` */
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 
@@ -17,6 +26,7 @@ header {
     background-color: white;
     width: 100%;
     float:left;
+    border-bottom: #cccccc solid 1px;
 }
 
 li {
@@ -28,7 +38,7 @@ li {
     padding: 20px 0px;
     height: 80px;
     color:white;
-    background-color: teal;
+    background-color:teal;
     text-align: center;
     width: 250px;
     position: relative;
@@ -37,11 +47,13 @@ li {
 
 ul {
     padding-inline-start: 0px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 30px 0;
-    margin-right: 10px;
+    font-weight: bold;
+    margin-right: 0px;
     text-align: right;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .li-link-a {
@@ -50,7 +62,7 @@ ul {
 }
 
 li {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 a {
@@ -64,7 +76,8 @@ a:visited {
 }
 
 a:hover {
-    color: blue;
+    color: darkblue;
+
 }
 
 /* Global Styles 
@@ -76,55 +89,163 @@ body {
     position: relative;
 }
 
+
+
+.container-header, main h1, label {
+    color: teal;
+}
+
+main {
+    margin: 20px 20px 80px 20px; 
+    /* float: left;   */
+}
+
+h1 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+
+
+.white-container {
+    background-color: white;
+    padding: 40px;
+    
+    max-width: 740px;
+}
+
+
+
+
+p {
+    line-height: 24px;
+    color:#777777;
+}
+
+footer {
+    background-color: #666666;
+    text-align: center;
+    /* height: 60px; */
+    color: white;
+    padding: 20px 0px;
+    border-top: #cccccc solid 5px; 
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    float: left;
+    z-index: 101;
+}
+
+
+/** About Page ***************************
+********************************/
+#profile {
+    float: left;
+    margin: 0px 20px 20px 0;
+}
+
 .container-header, .container-main {
     max-width: 940px;
     margin: 0 auto;
     
 }
 
-.container-header {
-    color: teal;
-}
-main {
-    margin: 20px 20px 80px 20px; 
-    float: left;  
-}
-
-
-img {
-    float:left;
-    margin: 0px 20px 10px 0;
-}
-
-.about-me-text {
-    background-color: white;
-    padding: 40px 30px;
-    
-    max-width: 740px;
-}
 
 .inner-container {
     margin-top: 20px;
 
 }
-
-p {
-    line-height: 26px;
-}
-
-footer {
-    background-color: #666666;
-    text-align: center;
-    height: 60px;
-    color: white;
-    padding: 30px 0 30px 0px;
-    border-top: #cccccc solid 5px; 
+/** Contact Page ***************************
+********************************/
+input, textarea {
     width: 100%;
-    position: fixed;
-    bottom: 0px;
-    float: left;
+    padding: 10px;
 }
 
+button {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: teal;
+    color: white;
+    font-size: 16px;
+
+}
+
+
+
+/** Portfolio  ***************************
+********************************/
+
+.flex-container {
+    display: flex;
+    /* display: -webkit-flex;
+    display: -webkit-box; */
+
+    flex-direction: row;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.portfolio-image{
+    
+    /* margin-bottom: 40px; */
+    width: 100%;
+  
+   
+}
+
+.portfolio-item {
+    position: relative;
+    width: 48%;
+    padding-top: 35%;
+    margin-bottom: 20px;
+   /* background-color: beige; */
+   background-size: cover;   
+   border: solid 1px black;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    background-color: #777777;
+    color: white;
+    text-align: center;
+    bottom: 15px;
+    z-index: 100;
+    padding: 1rem;
+    font-size:18px;
+}
+
+.item-1 {
+    background-image: url("../images/word-guess.jpg");
+    order: 1;
+}
+
+.item-2 {
+    background-image: url("../images/info-widget.jpg");
+    background-position-y: 70%;
+    order: 4;
+}
+
+.item-3 {
+    background-image: url("../images/rock-paper.jpg");
+    background-position-y: 80%;
+    order: 5;
+}
+.item-4 {
+    background-image: url("../images/trivia-game.jpg");
+    order: 3;
+}
+.item-5 {
+    background-image: url("../images/rpg-game.jpg");
+    background-position-y: 80%;
+    order: 2;
+}
+
+/** Media Queries ***************************
+********************************/
 @media screen and (max-width:980px) {
     header {
         width: 100%;
@@ -145,7 +266,7 @@ footer {
         margin-bottom: 20px;
     }
 
-   
+
 }
 
 @media screen and (max-width:768px) {
@@ -170,4 +291,14 @@ footer {
     .name-tag {
         margin: 0px;
     }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .banner {
+        font-size: 3vw;
+    }
 }
+
+

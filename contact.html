@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>RBA | Contact</title>
+    <title>RBA | About</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -12,56 +12,59 @@
 
 <body>
 
-    <div class="navigation">
+    <header>
+        <div class="container-header">
+            <div class="name-tag">
+                <h1>Rafael Avila</h1>
+            </div>
 
-        <header>
-            
-                
-                    <div id="name">
-                        <h1 id="name_heading">Rafael Avila</h1>
-                    </div>
 
-                    <div>
-                        <div class="link_text">
-                            <ul id="ul-links">
-                                <li><div class="link"><a href="index.html">About</a></div></li>
-                                <li><div class="link"><a href="portfolio.html">Portfolio</a></div></li>
-                                <li><div class="link"><a href="contact.html">Contact</a></div></li>
-                            </ul>
-                        </div>
-                    </div>
-                
-            
-        </header>
-    </div>
+            <div class="links-bar">
+                <ul id="ul-links">
+                    <li class="li-link-a"><a href="index.html">About</a></li>
+                    <li class="li-link-a"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="li-link"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
+    </header>
+    <hr>
     <main>
-        <h1>Contact</h1>
+        <div class="container-main">
 
-        <hr>
-        <form>
-            <br>
-            <label>Name</label><br>
-            <input class="contactInput" type="text" name="name">
-            <br><br>
+            <div class="white-container">
+                <h1>Contact</h1>
 
-            <label>Email</label><br>
-            <input class="contactInput" type="text" name="email">
-            
-            <br><br>
+                <hr>
 
-            <label>Message</label><br>
-            <textarea name="message"></textarea>
-            <br><br>
+                <div class="inner-container">
 
-            <input type="button" class="button" value="Submit">
-        </form>
-    
+                    <form>
+                        <br>
+                        <label><strong>Name</strong></label><br>
+                        <input class="contactInput" type="text" name="name"><br>
+                        <br>
+
+                        <label><strong>Email</strong></label><br>
+                        <input class="contactInput" type="text" name="email"><br>
+                        <br>
+
+                        <label><strong>Message</strong></label><br>
+                        <textarea name="message" rows="5"></textarea><br>
+                        
+
+                        <button type="button" value="Submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
 
     </main>
-    
+
     <footer>
-        Copyright &copy;
+        <small>&copy; Copyright 2018 rbavila</small>
     </footer>
 </body>
+
 </html>
