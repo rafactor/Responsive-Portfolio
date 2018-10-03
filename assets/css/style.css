@@ -190,22 +190,28 @@ button {
     align-content: space-between;
 }
 
-.portfolio-image{
-    
-    /* margin-bottom: 40px; */
-    /* width: 100%; */
-  
-   
-}
 
 .portfolio-item {
     position: relative;
     width: 48%;
-    padding-top: 40%;
+    padding-top: 36%;
     margin-bottom: 20px;
    /* background-color: beige; */
    background-size: cover;   
+}
 
+
+
+.portfolio-image {
+    background-color: rgba(255, 255,255,0.8);
+    z-index: 101;
+    width: 100%;
+    padding-top: 75%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  
+    margin-bottom: 20px;
 }
 
 .banner {
@@ -218,11 +224,13 @@ button {
     z-index: 100;
     padding: 2rem;
     font-size:18px;
+
 }
 
 .item-1 {
     background-image: url("../images/word-guess.jpg");
     order: 1;
+ 
 }
 
 .item-2 {
@@ -244,6 +252,27 @@ button {
     background-image: url("../images/rpg-game.jpg");
     background-position-y: 80%;
     order: 2;
+}
+
+
+.portfolio-image:hover {
+    animation-name: portfolio-image;
+    animation-duration: 4s;
+}
+
+.banner:hover {
+    animation-name: banner-color;
+    animation-duration: 4s;
+}
+
+@keyframes portfolio-image {
+    from {background-color: rgba(255, 255,255,.8);}
+    to {background-color: rgba(255, 255,255,0);}
+}
+
+@keyframes banner-color {
+    from {background-color:  #777777;}
+    to {background-color: black;}
 }
 
 /** Media Queries ***************************
